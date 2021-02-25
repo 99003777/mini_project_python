@@ -1,3 +1,13 @@
+'''
+Author: Aman Srivastava
+PS Number: 99003777
+Contact: aman.srivastava@ltts.com
+Date of Creation: 23/02/2021
+Description: This program takes two inputs, first the number of words you want to serach in a text file 
+and second the words you want to search. Then the output is that it makes  a new text file containing 
+the number of occurrences of that word and lines having next and previous word around that searched word
+'''
+
 import re
 
 '''
@@ -58,8 +68,8 @@ def output_string(file_str_list1):
     return final_file                    
         
 
-n = int(input("Enter number of words you want to search\n"))
-for k in range(0, n):
+n = int(input("Enter number of words you want to search\n"))  # number of words you want to search
+for k in range(0, n): 
     if __name__ == "__main__":
         new_file = open("input.txt", 'r')  # opened file and read it in a handler named new_file
         search_word = input("Enter word you want to search\n")
